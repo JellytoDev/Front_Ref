@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="./static/libs/">
-
     <!-- core -->
     <script src="./static/libs/jquery/jquery.min.js"></script>
     <script src="./static/libs/angularjs/angular.min.js"></script>
@@ -15,17 +13,33 @@
     <script src="./static/libs/toastr/toastr.min.js"></script>
     <script src="./static/libs/showdown/showdown.min.js"></script>
 
-    <link rel="stylesheet" href="./static/libs/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="./static/libs/toastr/toastr.min.css">
-
     <!-- css core -->
     <link rel="stylesheet" href="./static/libs/tabler/Tabler/dist/css/tabler.min.css">
     <link rel="stylesheet" href="./static/libs/tabler/Tabler/dist/css/tabler-flags.min.css">
     <link rel="stylesheet" href="./static/libs/tabler/Tabler/dist/css/tabler-payments.min.css">
     <link rel="stylesheet" href="./static/libs/tabler/Tabler/dist/css/tabler-vendors.min.css">
     <link rel="stylesheet" href="./static/libs/tabler/Tabler/dist/css/demo.min.css">
+
+    <link rel="stylesheet" href="./static/libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./static/libs/toastr/toastr.min.css">
+
+    <script>
+
+
+        const container = angular.module("container", []);
+
+        container.controller("container-controller", async ($scope,$timeout)=> {
+
+
+        })
+
+    </script>
 </head>
 <body>
+    <div class="container" ng-app="container" ng-controller="container-controller">
 
+
+
+    </div>
 </body>
 </html>
